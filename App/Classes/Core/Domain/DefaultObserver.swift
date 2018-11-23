@@ -1,12 +1,6 @@
 import RxSwift
 
-class DefaultObserver<T>: ObserverType {
+class DefaultObserver<T> {
 
-    typealias E = T
-
-    func on(_ event: Event<T>) {
-        onEvent(event: event)
-    }
-
-    func onEvent(event: Event<T>) {}
+    func onEvent(event: SingleEvent<T>) {}
 }

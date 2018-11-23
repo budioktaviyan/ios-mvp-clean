@@ -19,6 +19,10 @@
 		1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517321A68C9A00DDA683 /* AppAssembly.swift */; };
 		1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517521A698DB00DDA683 /* DefaultObserver.swift */; };
 		1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517721A69C0D00DDA683 /* Usecase.swift */; };
+		1F9E069421A8BBC5009E28BA /* RxNimbleRxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */; };
+		1F9E069621A8BC17009E28BA /* RxNimbleRxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */; };
+		1FD78BA021AFC288003FDA67 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD78B9F21AFC288003FDA67 /* AppContainer.swift */; };
+		1FD78BA221AFCC21003FDA67 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD78BA121AFCC21003FDA67 /* AppRouter.swift */; };
 		1FECECEE21A27C97001B0013 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE321A27C97001B0013 /* RxCocoa.framework */; };
 		1FECECEF21A27C97001B0013 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE421A27C97001B0013 /* Kingfisher.framework */; };
 		1FECECF021A27C97001B0013 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE521A27C97001B0013 /* RxSwift.framework */; };
@@ -59,6 +63,10 @@
 		1F87517321A68C9A00DDA683 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		1F87517521A698DB00DDA683 /* DefaultObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultObserver.swift; sourceTree = "<group>"; };
 		1F87517721A69C0D00DDA683 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
+		1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxTest.framework; path = Carthage/Build/iOS/RxNimbleRxTest.framework; sourceTree = "<group>"; };
+		1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxBlocking.framework; path = Carthage/Build/iOS/RxNimbleRxBlocking.framework; sourceTree = "<group>"; };
+		1FD78B9F21AFC288003FDA67 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		1FD78BA121AFCC21003FDA67 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1FECECE021A27C10001B0013 /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
 		1FECECE221A27C97001B0013 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		1FECECE321A27C97001B0013 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -93,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9E069621A8BC17009E28BA /* RxNimbleRxBlocking.framework in Frameworks */,
+				1F9E069421A8BBC5009E28BA /* RxNimbleRxTest.framework in Frameworks */,
 				1FECECFB21A2824B001B0013 /* RxTest.framework in Frameworks */,
 				1FECECFA21A2823F001B0013 /* Nimble.framework in Frameworks */,
 				1FECECF921A2822C001B0013 /* Quick.framework in Frameworks */,
@@ -193,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				1F87517321A68C9A00DDA683 /* AppAssembly.swift */,
+				1FD78B9F21AFC288003FDA67 /* AppContainer.swift */,
+				1FD78BA121AFCC21003FDA67 /* AppRouter.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -200,6 +212,8 @@
 		1FECECDF21A27C0F001B0013 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */,
+				1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */,
 				1FECECEA21A27C97001B0013 /* Alamofire.framework */,
 				1FECECE421A27C97001B0013 /* Kingfisher.framework */,
 				1FECECEB21A27C97001B0013 /* Nimble.framework */,
@@ -376,6 +390,8 @@
 				1F6B8379219ED8CC00146FD1 /* AppDelegate.swift in Sources */,
 				1F87516D21A625D400DDA683 /* JobExecutor.swift in Sources */,
 				1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */,
+				1FD78BA221AFCC21003FDA67 /* AppRouter.swift in Sources */,
+				1FD78BA021AFC288003FDA67 /* AppContainer.swift in Sources */,
 				1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */,
 				1F87516B21A578CC00DDA683 /* CoreExt.swift in Sources */,
 			);

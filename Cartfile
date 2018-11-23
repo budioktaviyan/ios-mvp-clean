@@ -1,11 +1,11 @@
 # List of required dependencies
 
-github "Swinject/Swinject" == 2.5.0
-github "ReactiveX/RxSwift" == 4.4.0
-github "RxSwiftCommunity/RxAlamofire" == 4.3.0
-github "onevcat/Kingfisher" == 4.10.1
+github "Swinject/Swinject" "2.5.0"
+github "ReactiveX/RxSwift" "4.4.0"
+github "RxSwiftCommunity/RxAlamofire" "4.3.0"
+github "onevcat/Kingfisher" "4.10.1"
 
 # List of required test dependencies
 
 github "Quick/Quick" "v1.3.2"
-github "Quick/Nimble" "v7.3.1"
+github "RxSwiftCommunity/RxNimble" "4.4.1"
