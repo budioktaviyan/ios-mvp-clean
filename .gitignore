@@ -1,6 +1,8 @@
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+App.xcodeproj/project.xcworkspace/xcshareddata
+App.xcworkspace/xcshareddata
 
 ## Build generated
 build/
@@ -55,6 +57,7 @@ Gemfile.lock
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 Carthage/Checkouts
 Carthage/Build
+Cartfile.resolved
 
 # fastlane
 #
@@ -68,7 +71,14 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
-# Other
+#
+# macOS
+#
+
+# General
 .DS_Store
-App.xcodeproj/project.xcworkspace/xcshareddata
-App.xcworkspace/xcshareddata
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
