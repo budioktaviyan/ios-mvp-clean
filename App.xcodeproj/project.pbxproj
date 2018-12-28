@@ -67,7 +67,6 @@
 		1F87517721A69C0D00DDA683 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxTest.framework; path = Carthage/Build/iOS/RxNimbleRxTest.framework; sourceTree = "<group>"; };
 		1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxBlocking.framework; path = Carthage/Build/iOS/RxNimbleRxBlocking.framework; sourceTree = "<group>"; };
-		1FECECE021A27C10001B0013 /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
 		1FECECE221A27C97001B0013 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		1FECECE321A27C97001B0013 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1FECECE421A27C97001B0013 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
@@ -233,7 +232,6 @@
 				1FECECE521A27C97001B0013 /* RxSwift.framework */,
 				1FECECE921A27C97001B0013 /* RxTest.framework */,
 				1FECECE621A27C97001B0013 /* Swinject.framework */,
-				1FECECE021A27C10001B0013 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,9 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F55855721D4FD9D0073E05F /* Main.storyboard in Resources */,
-				1F6B8383219ED8CD00146FD1 /* LaunchScreen.storyboard in Resources */,
 				1F6B8380219ED8CD00146FD1 /* Assets.xcassets in Resources */,
+				1F6B8383219ED8CD00146FD1 /* LaunchScreen.storyboard in Resources */,
+				1F55855721D4FD9D0073E05F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
