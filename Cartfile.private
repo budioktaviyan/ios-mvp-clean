@@ -1,0 +1,3 @@
+# List of required test dependencies
+github "Quick/Quick" "v1.3.2"
+github "RxSwiftCommunity/RxNimble" "4.4.1"

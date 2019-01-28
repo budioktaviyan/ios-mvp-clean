@@ -3,7 +3,3 @@ github "Swinject/Swinject" "2.5.0"
 github "ReactiveX/RxSwift" "4.4.0"
 github "RxSwiftCommunity/RxAlamofire" "4.3.0"
 github "onevcat/Kingfisher" "4.10.1"
-
-# List of required test dependencies
-github "Quick/Quick" "v1.3.2"
-github "RxSwiftCommunity/RxNimble" "4.4.1"
