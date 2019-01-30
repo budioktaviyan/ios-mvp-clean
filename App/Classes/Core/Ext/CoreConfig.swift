@@ -7,17 +7,14 @@ enum CoreKey: String {
 
 struct CoreConfig {
 
-    static let BASE_URL = configuration(.BaseURL)
-    static let IMAGE_URL = configuration(.ImageURL)
-    static let API_KEY = "f920accbb779fcb3ab3bbec9a8b40bd0"
+    static let BASE_URL: String = configuration(.BaseURL)
+    static let IMAGE_URL: String = configuration(.ImageURL)
+    static let API_KEY: String = "f920accbb779fcb3ab3bbec9a8b40bd0"
 
     struct Module {
-
-        static let API_VERSION = "3"
-
         struct Movie {
 
-            static let DISCOVER = "/discover/movie"
+            static let DISCOVER: String = "3/discover/movie"
         }
     }
 
@@ -26,7 +23,7 @@ struct CoreConfig {
     }
 
     private static var infoDict: [String: Any] {
-        guard let dict = Bundle.main.infoDictionary else { fatalError("Info.plist not found!") }
+        guard let dict: [String: Any] = Bundle.main.infoDictionary else { fatalError("Info.plist not found!") }
         return dict
     }
 }

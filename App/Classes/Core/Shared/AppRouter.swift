@@ -1,5 +1,4 @@
 import UIKit
-import Swinject
 
 protocol AppRouterDelegate {
 
@@ -11,11 +10,9 @@ class AppRouter: AppRouterDelegate {
     static let instance: AppRouter = AppRouter.create()
 
     private let navigation: UINavigationController?
-    private let assembler: Assembler
 
-    init(navigation: UINavigationController?, assembler: Assembler) {
+    init(navigation: UINavigationController?) {
         self.navigation = navigation
-        self.assembler = assembler
     }
 
     func presentView(controller: UIViewController) {
@@ -24,11 +21,8 @@ class AppRouter: AppRouterDelegate {
 
     private static func create() -> AppRouter {
         let root: UINavigationController? = UIApplication.shared.delegate?.window??.rootViewController as? UINavigationController
+        let router: AppRouter = AppRouter(navigation: root)
 
-        let assembler: Assembler = Assembler()
-        assembler.apply(assemblies: [AppAssembly()])
-
-        let router = AppRouter(navigation: root, assembler: assembler)
         return router
     }
 }

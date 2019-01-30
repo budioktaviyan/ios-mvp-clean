@@ -18,7 +18,7 @@ final class Network<T: Codable> {
     }
 
     func dicoverMovie(_ path: String, parameters: [String: Any]) -> Single<T> {
-        let absolutePath = "\(baseURL)/\(path)"
+        let absolutePath: String = "\(baseURL)/\(path)"
         return RxAlamofire
             .data(
                 .get,

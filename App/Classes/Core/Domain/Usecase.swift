@@ -2,12 +2,12 @@ import RxSwift
 
 class Usecase<T, Params> {
 
-    private var jobExecutor: JobExecutor
-    private var uiThread: UIThread
-
+    private let jobExecutor: JobExecutor
+    private let uiThread: UIThread
     private let disposables: CompositeDisposable = CompositeDisposable()
 
-    init(jobExecutor: JobExecutor, uiThread: UIThread) {
+    init(jobExecutor: JobExecutor,
+         uiThread: UIThread) {
         self.jobExecutor = jobExecutor
         self.uiThread = uiThread
     }
@@ -20,7 +20,11 @@ class Usecase<T, Params> {
         let single: Single<T> = buildUsecaseObservable(params: params)
             .subscribeOn(jobExecutor.getSchedulerType())
             .observeOn(uiThread.getSchedulerType())
-        addDisposable(disposable: single.subscribe { singleObserver in })
+        let disposable: Disposable = single.subscribe { event in
+            return singleObserver.onEvent(event: event)
+        }
+
+        addDisposable(disposable: disposable)
     }
 
     func dispose() {

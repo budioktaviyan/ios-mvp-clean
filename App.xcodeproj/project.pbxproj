@@ -22,12 +22,24 @@
 		1F44E26D21D503B4003A0542 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE921A27C97001B0013 /* RxTest.framework */; };
 		1F44E27021D50615003A0542 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F44E26F21D50615003A0542 /* AppRouter.swift */; };
 		1F55855721D4FD9D0073E05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F55855521D4FD9D0073E05F /* Main.storyboard */; };
+		1F62290722028EFB001C5AFC /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62290622028EFB001C5AFC /* AppContainer.swift */; };
 		1F6B8379219ED8CC00146FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B8378219ED8CC00146FD1 /* AppDelegate.swift */; };
 		1F6B8380219ED8CD00146FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B837F219ED8CD00146FD1 /* Assets.xcassets */; };
 		1F6B8383219ED8CD00146FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B8381219ED8CD00146FD1 /* LaunchScreen.storyboard */; };
 		1F6B838E219ED8CD00146FD1 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B838D219ED8CD00146FD1 /* HomePresenterTest.swift */; };
 		1F80C66421FD312200C88019 /* PrimitiveSequenceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C66321FD312200C88019 /* PrimitiveSequenceExt.swift */; };
 		1F80C66B21FEF91300C88019 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C66A21FEF91300C88019 /* HomePresenter.swift */; };
+		1F80C66D21FF088A00C88019 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C66C21FF088A00C88019 /* HomeResponse.swift */; };
+		1F80C66F21FF127C00C88019 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C66E21FF127C00C88019 /* HomeDatasource.swift */; };
+		1F80C67121FF142400C88019 /* HomeParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67021FF142400C88019 /* HomeParam.swift */; };
+		1F80C67321FF19CD00C88019 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67221FF19CD00C88019 /* HomeEntity.swift */; };
+		1F80C67521FFEDFD00C88019 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67421FFEDFD00C88019 /* HomeAssembly.swift */; };
+		1F80C67722000BFC00C88019 /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67622000BFC00C88019 /* NetworkAssembly.swift */; };
+		1F80C6792200211400C88019 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C6782200211400C88019 /* HomeFactory.swift */; };
+		1F80C67B2200232900C88019 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67A2200232900C88019 /* HomeRepository.swift */; };
+		1F80C67D220028DD00C88019 /* HomeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67C220028DD00C88019 /* HomeUsecase.swift */; };
+		1F80C67F22002DEE00C88019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C67E22002DEE00C88019 /* HomeView.swift */; };
+		1F80C68122004C4500C88019 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80C68022004C4500C88019 /* HomeController.swift */; };
 		1F87516921A5775200DDA683 /* CoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87516821A5775200DDA683 /* CoreConfig.swift */; };
 		1F87516B21A578CC00DDA683 /* CoreExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87516A21A578CC00DDA683 /* CoreExt.swift */; };
 		1F87516D21A625D400DDA683 /* JobExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87516C21A625D400DDA683 /* JobExecutor.swift */; };
@@ -52,6 +64,7 @@
 /* Begin PBXFileReference section */
 		1F44E26F21D50615003A0542 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1F55855621D4FD9D0073E05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F62290622028EFB001C5AFC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		1F6B8375219ED8CC00146FD1 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6B8378219ED8CC00146FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F6B837F219ED8CD00146FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +75,17 @@
 		1F6B838F219ED8CD00146FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F80C66321FD312200C88019 /* PrimitiveSequenceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitiveSequenceExt.swift; sourceTree = "<group>"; };
 		1F80C66A21FEF91300C88019 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1F80C66C21FF088A00C88019 /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		1F80C66E21FF127C00C88019 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		1F80C67021FF142400C88019 /* HomeParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeParam.swift; sourceTree = "<group>"; };
+		1F80C67221FF19CD00C88019 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		1F80C67421FFEDFD00C88019 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		1F80C67622000BFC00C88019 /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		1F80C6782200211400C88019 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		1F80C67A2200232900C88019 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		1F80C67C220028DD00C88019 /* HomeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsecase.swift; sourceTree = "<group>"; };
+		1F80C67E22002DEE00C88019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1F80C68022004C4500C88019 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1F87516821A5775200DDA683 /* CoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConfig.swift; sourceTree = "<group>"; };
 		1F87516A21A578CC00DDA683 /* CoreExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExt.swift; sourceTree = "<group>"; };
 		1F87516C21A625D400DDA683 /* JobExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExecutor.swift; sourceTree = "<group>"; };
@@ -117,12 +141,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F44E26E21D505F6003A0542 /* Router */ = {
+		1F6229042202772E001C5AFC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1FD6C21421FBD29E009F4699 /* Network.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1F62290522028DF5001C5AFC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1F62290622028EFB001C5AFC /* AppContainer.swift */,
 				1F44E26F21D50615003A0542 /* AppRouter.swift */,
 			);
-			path = Router;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		1F6B836C219ED8CC00146FD1 = {
@@ -185,7 +218,17 @@
 		1F80C66921FEF8FB00C88019 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1F80C67421FFEDFD00C88019 /* HomeAssembly.swift */,
+				1F80C68022004C4500C88019 /* HomeController.swift */,
+				1F80C66E21FF127C00C88019 /* HomeDatasource.swift */,
+				1F80C67221FF19CD00C88019 /* HomeEntity.swift */,
+				1F80C6782200211400C88019 /* HomeFactory.swift */,
+				1F80C67021FF142400C88019 /* HomeParam.swift */,
 				1F80C66A21FEF91300C88019 /* HomePresenter.swift */,
+				1F80C67A2200232900C88019 /* HomeRepository.swift */,
+				1F80C66C21FF088A00C88019 /* HomeResponse.swift */,
+				1F80C67C220028DD00C88019 /* HomeUsecase.swift */,
+				1F80C67E22002DEE00C88019 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -203,11 +246,11 @@
 			isa = PBXGroup;
 			children = (
 				1F87517221A68C6D00DDA683 /* Assembly */,
-				1FD6C21321FBD24B009F4699 /* Data */,
+				1F6229042202772E001C5AFC /* Data */,
 				1F87516521A56F0C00DDA683 /* Domain */,
 				1F87516621A56F1400DDA683 /* Executor */,
 				1F87516721A5773800DDA683 /* Ext */,
-				1F44E26E21D505F6003A0542 /* Router */,
+				1F62290522028DF5001C5AFC /* Shared */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -245,16 +288,9 @@
 			isa = PBXGroup;
 			children = (
 				1F87517321A68C9A00DDA683 /* AppAssembly.swift */,
+				1F80C67622000BFC00C88019 /* NetworkAssembly.swift */,
 			);
 			path = Assembly;
-			sourceTree = "<group>";
-		};
-		1FD6C21321FBD24B009F4699 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				1FD6C21421FBD29E009F4699 /* Network.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		1FECECDF21A27C0F001B0013 /* Frameworks */ = {
@@ -431,18 +467,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F80C67521FFEDFD00C88019 /* HomeAssembly.swift in Sources */,
+				1F80C67B2200232900C88019 /* HomeRepository.swift in Sources */,
+				1F80C6792200211400C88019 /* HomeFactory.swift in Sources */,
+				1F80C67321FF19CD00C88019 /* HomeEntity.swift in Sources */,
+				1F80C66F21FF127C00C88019 /* HomeDatasource.swift in Sources */,
 				1FD6C21521FBD29E009F4699 /* Network.swift in Sources */,
 				1F87516F21A628FD00DDA683 /* RxThread.swift in Sources */,
 				1F87517121A6298300DDA683 /* UIThread.swift in Sources */,
+				1F80C67121FF142400C88019 /* HomeParam.swift in Sources */,
 				1F87516921A5775200DDA683 /* CoreConfig.swift in Sources */,
 				1F80C66421FD312200C88019 /* PrimitiveSequenceExt.swift in Sources */,
+				1F80C66D21FF088A00C88019 /* HomeResponse.swift in Sources */,
 				1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */,
 				1F6B8379219ED8CC00146FD1 /* AppDelegate.swift in Sources */,
 				1F87516D21A625D400DDA683 /* JobExecutor.swift in Sources */,
 				1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */,
+				1F80C67722000BFC00C88019 /* NetworkAssembly.swift in Sources */,
+				1F62290722028EFB001C5AFC /* AppContainer.swift in Sources */,
 				1F80C66B21FEF91300C88019 /* HomePresenter.swift in Sources */,
+				1F80C67D220028DD00C88019 /* HomeUsecase.swift in Sources */,
 				1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */,
+				1F80C68122004C4500C88019 /* HomeController.swift in Sources */,
 				1F44E27021D50615003A0542 /* AppRouter.swift in Sources */,
+				1F80C67F22002DEE00C88019 /* HomeView.swift in Sources */,
 				1F87516B21A578CC00DDA683 /* CoreExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
