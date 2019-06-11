@@ -1,16 +1,18 @@
 import RxSwift
 
-class Usecase<T, Params> {
+protocol Usecase {
 
-    private let jobExecutor: JobExecutor
-    private let uiThread: UIThread
-    private let disposables: CompositeDisposable = CompositeDisposable()
+    associatedtype T
+    associatedtype Params
 
-    init(jobExecutor: JobExecutor,
-         uiThread: UIThread) {
-        self.jobExecutor = jobExecutor
-        self.uiThread = uiThread
-    }
+    var jobExecutor: JobExecutor { get }
+    var uiThread: UIThread { get }
+    var disposables: CompositeDisposable { get }
+
+    func buildUsecaseObservable(params: Params) -> Single<T>
+}
+
+extension Usecase {
 
     func buildUsecaseObservable(params: Params) -> Single<T> {
         return Single.never()
@@ -24,15 +26,11 @@ class Usecase<T, Params> {
             return singleObserver.onEvent(event: event)
         }
 
-        addDisposable(disposable: disposable)
+        _ = disposables.insert(disposable)
     }
 
     func dispose() {
         disposables.dispose()
         disposables.disposed(by: DisposeBag())
-    }
-
-    private func addDisposable(disposable: Disposable) {
-        _ = disposables.insert(disposable)
     }
 }
