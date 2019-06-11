@@ -1,5 +1,5 @@
 # List of required dependencies
-github "Swinject/Swinject" "2.5.0"
-github "ReactiveX/RxSwift" "4.4.0"
-github "RxSwiftCommunity/RxAlamofire" "4.3.0"
-github "onevcat/Kingfisher" "4.10.1"
+github "Swinject/Swinject" "2.6.1"
+github "ReactiveX/RxSwift" "4.5.0"
+github "RxSwiftCommunity/RxAlamofire" "4.5.0"
+github "onevcat/Kingfisher" "5.6.0"
