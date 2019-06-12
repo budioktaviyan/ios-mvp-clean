@@ -12,7 +12,7 @@ struct CoreConfig {
     static let API_KEY: String = "f920accbb779fcb3ab3bbec9a8b40bd0"
 
     struct Module {
-        struct Movie {
+        struct Movies {
 
             static let DISCOVER: String = "3/discover/movie"
         }

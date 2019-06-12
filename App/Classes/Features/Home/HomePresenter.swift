@@ -22,6 +22,10 @@ class HomePresenter {
         view?.onShowLoading()
         usecase.execute(singleObserver: HomeUsecaseObserver(withView: view), params: params)
     }
+
+    func discoverMoreMovie() {
+        // TODO: Load more movie here using pagination
+    }
 }
 
 fileprivate class HomeUsecaseObserver: DefaultObserver<HomeEntity> {

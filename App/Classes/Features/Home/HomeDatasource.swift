@@ -15,7 +15,7 @@ class HomeDatasource: HomeDatasourceDelegate {
 
     func discoverMovie(withParam: HomeParam) -> PrimitiveSequence<SingleTrait, HomeResponse> {
         return network.dicoverMovie(
-            CoreConfig.Module.Movie.DISCOVER,
+            CoreConfig.Module.Movies.DISCOVER,
             parameters: withParam.request.nullKeyRemoval()
         )
     }

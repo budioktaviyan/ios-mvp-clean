@@ -49,6 +49,16 @@
 		1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517521A698DB00DDA683 /* DefaultObserver.swift */; };
 		1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517721A69C0D00DDA683 /* Usecase.swift */; };
 		1FD6C21521FBD29E009F4699 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6C21421FBD29E009F4699 /* Network.swift */; };
+		1FF0D87922B0D7C0005DBA17 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D87822B0D7C0005DBA17 /* Datasource.swift */; };
+		1FF0D87B22B0D7DB005DBA17 /* DatasourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D87A22B0D7DB005DBA17 /* DatasourceCell.swift */; };
+		1FF0D87D22B0D811005DBA17 /* DatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D87C22B0D811005DBA17 /* DatasourceController.swift */; };
+		1FF0D87F22B0D82A005DBA17 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D87E22B0D82A005DBA17 /* DefaultCell.swift */; };
+		1FF0D88122B0D871005DBA17 /* LoadingErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88022B0D871005DBA17 /* LoadingErrorView.swift */; };
+		1FF0D88322B0D8D0005DBA17 /* LoadingMoreErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88222B0D8D0005DBA17 /* LoadingMoreErrorView.swift */; };
+		1FF0D88522B0D8E7005DBA17 /* LoadingMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88422B0D8E7005DBA17 /* LoadingMoreView.swift */; };
+		1FF0D88722B0D8FA005DBA17 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88622B0D8FA005DBA17 /* LoadingView.swift */; };
+		1FF0D88922B1EEAB005DBA17 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88822B1EEAB005DBA17 /* HomeViewCell.swift */; };
+		1FF0D88B22B1EF41005DBA17 /* HomeViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D88A22B1EF41005DBA17 /* HomeViewDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +118,16 @@
 		1FECECEA21A27C97001B0013 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1FECECEB21A27C97001B0013 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		1FECECEC21A27C97001B0013 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		1FF0D87822B0D7C0005DBA17 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		1FF0D87A22B0D7DB005DBA17 /* DatasourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceCell.swift; sourceTree = "<group>"; };
+		1FF0D87C22B0D811005DBA17 /* DatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceController.swift; sourceTree = "<group>"; };
+		1FF0D87E22B0D82A005DBA17 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		1FF0D88022B0D871005DBA17 /* LoadingErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorView.swift; sourceTree = "<group>"; };
+		1FF0D88222B0D8D0005DBA17 /* LoadingMoreErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingMoreErrorView.swift; sourceTree = "<group>"; };
+		1FF0D88422B0D8E7005DBA17 /* LoadingMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingMoreView.swift; sourceTree = "<group>"; };
+		1FF0D88622B0D8FA005DBA17 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1FF0D88822B1EEAB005DBA17 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		1FF0D88A22B1EF41005DBA17 /* HomeViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +249,8 @@
 				1F80C66C21FF088A00C88019 /* HomeResponse.swift */,
 				1F80C67C220028DD00C88019 /* HomeUsecase.swift */,
 				1F80C67E22002DEE00C88019 /* HomeView.swift */,
+				1FF0D88822B1EEAB005DBA17 /* HomeViewCell.swift */,
+				1FF0D88A22B1EF41005DBA17 /* HomeViewDatasource.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -236,6 +258,7 @@
 		1F87516321A56DD500DDA683 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1FF0D87722B0D7A4005DBA17 /* Components */,
 				1F87516421A56DE400DDA683 /* Core */,
 				1F80C66721FEF82D00C88019 /* Features */,
 			);
@@ -327,6 +350,21 @@
 				1F80C66821FEF8B800C88019 /* Home */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		1FF0D87722B0D7A4005DBA17 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0D87822B0D7C0005DBA17 /* Datasource.swift */,
+				1FF0D87A22B0D7DB005DBA17 /* DatasourceCell.swift */,
+				1FF0D87C22B0D811005DBA17 /* DatasourceController.swift */,
+				1FF0D87E22B0D82A005DBA17 /* DefaultCell.swift */,
+				1FF0D88022B0D871005DBA17 /* LoadingErrorView.swift */,
+				1FF0D88222B0D8D0005DBA17 /* LoadingMoreErrorView.swift */,
+				1FF0D88422B0D8E7005DBA17 /* LoadingMoreView.swift */,
+				1FF0D88622B0D8FA005DBA17 /* LoadingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,10 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF0D88B22B1EF41005DBA17 /* HomeViewDatasource.swift in Sources */,
 				1F80C67521FFEDFD00C88019 /* HomeAssembly.swift in Sources */,
 				1F80C67B2200232900C88019 /* HomeRepository.swift in Sources */,
 				1F80C6792200211400C88019 /* HomeFactory.swift in Sources */,
 				1F80C67321FF19CD00C88019 /* HomeEntity.swift in Sources */,
+				1FF0D87D22B0D811005DBA17 /* DatasourceController.swift in Sources */,
+				1FF0D88922B1EEAB005DBA17 /* HomeViewCell.swift in Sources */,
 				1F80C66F21FF127C00C88019 /* HomeDatasource.swift in Sources */,
 				1FD6C21521FBD29E009F4699 /* Network.swift in Sources */,
 				1F87516F21A628FD00DDA683 /* RxThread.swift in Sources */,
@@ -480,15 +521,22 @@
 				1F80C66421FD312200C88019 /* PrimitiveSequenceExt.swift in Sources */,
 				1F80C66D21FF088A00C88019 /* HomeResponse.swift in Sources */,
 				1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */,
+				1FF0D88722B0D8FA005DBA17 /* LoadingView.swift in Sources */,
+				1FF0D88322B0D8D0005DBA17 /* LoadingMoreErrorView.swift in Sources */,
 				1F6B8379219ED8CC00146FD1 /* AppDelegate.swift in Sources */,
 				1F87516D21A625D400DDA683 /* JobExecutor.swift in Sources */,
 				1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */,
 				1F80C67722000BFC00C88019 /* NetworkAssembly.swift in Sources */,
 				1F62290722028EFB001C5AFC /* AppContainer.swift in Sources */,
 				1F80C66B21FEF91300C88019 /* HomePresenter.swift in Sources */,
+				1FF0D88122B0D871005DBA17 /* LoadingErrorView.swift in Sources */,
 				1F80C67D220028DD00C88019 /* HomeUsecase.swift in Sources */,
+				1FF0D87B22B0D7DB005DBA17 /* DatasourceCell.swift in Sources */,
 				1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */,
 				1F80C68122004C4500C88019 /* HomeController.swift in Sources */,
+				1FF0D87F22B0D82A005DBA17 /* DefaultCell.swift in Sources */,
+				1FF0D87922B0D7C0005DBA17 /* Datasource.swift in Sources */,
+				1FF0D88522B0D8E7005DBA17 /* LoadingMoreView.swift in Sources */,
 				1F44E27021D50615003A0542 /* AppRouter.swift in Sources */,
 				1F80C67F22002DEE00C88019 /* HomeView.swift in Sources */,
 				1F87516B21A578CC00DDA683 /* CoreExt.swift in Sources */,
