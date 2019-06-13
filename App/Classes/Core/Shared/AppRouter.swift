@@ -13,6 +13,7 @@ class AppRouter: AppRouterDelegate {
 
     init(navigation: UINavigationController?) {
         self.navigation = navigation
+        self.navigation?.isNavigationBarHidden = false
     }
 
     func presentView(controller: UIViewController) {

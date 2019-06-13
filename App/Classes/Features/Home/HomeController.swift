@@ -135,11 +135,12 @@ extension HomeController: HomeView {
 
     func onShowLoading() {
         initLoadView()
-        loadingView.show()
+        loadingView.showAnimation()
     }
 
     func onHideLoading() {
-        loadingView.hide()
+        reloadData()
+        loadingView.hideAnimation()
     }
 
     func onShowDiscoverMovie(entity: HomeEntity) {
