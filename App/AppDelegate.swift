@@ -7,8 +7,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        AppContainer.instance.inject()
-        AppRouter.instance.presentView(controller: HomeController())
+        let router: AppRouter = AppRouter.instance
+        router.presentModule(module: HomeModule(router: router))
+
         return true
     }
 

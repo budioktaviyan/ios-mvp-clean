@@ -2,20 +2,18 @@ import RxSwift
 
 class HomePresenter {
 
+    weak var view: HomeView?
+
     private let usecase: HomeUsecase
 
-    private weak var view: HomeView?
-
-    init(usecase: HomeUsecase) {
+    init(view: HomeView,
+         usecase: HomeUsecase) {
+        self.view = view
         self.usecase = usecase
     }
 
     deinit {
         usecase.dispose()
-    }
-
-    func onAttach(view: HomeView) {
-        self.view = view
     }
 
     func discoverMovie(params: HomeParam) {

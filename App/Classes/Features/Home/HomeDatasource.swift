@@ -11,7 +11,7 @@ class HomeDatasource: HomeDatasourceDelegate {
 
     typealias T = HomeResponse
 
-    private lazy var network = AppContainer.instance.resolve(type: Network<T>.self)
+    var network: Network<T>!
 
     func discoverMovie(withParam: HomeParam) -> PrimitiveSequence<SingleTrait, HomeResponse> {
         return network.dicoverMovie(

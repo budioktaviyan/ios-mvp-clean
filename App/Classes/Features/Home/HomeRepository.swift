@@ -34,7 +34,7 @@ class HomeRepository: HomeRepositoryDelegate {
             return HomeEntity(
                 page: page,
                 totalPages: totalPages,
-                movies: movies!
+                movies: movies ?? []
             )
         }
     }

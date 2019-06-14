@@ -2,8 +2,9 @@ import UIKit
 
 class HomeController: DatasourceController {
 
+    var presenter: HomePresenter!
+
     private lazy var params: HomeParam = HomeParam(apiKey: CoreConfig.API_KEY)
-    private lazy var presenter: HomePresenter = AppContainer.instance.resolve(type: HomePresenter.self)
     private lazy var datasources: HomeViewDatasource = HomeViewDatasource()
     private lazy var loadingView: LoadingView = LoadingView()
     private lazy var errorView: LoadingErrorView = {
@@ -30,7 +31,6 @@ class HomeController: DatasourceController {
         self.collectionView?.backgroundColor = .white
         self.datasource = datasources
 
-        presenter.onAttach(view: self)
         presenter.discoverMovie(params: params)
     }
 
