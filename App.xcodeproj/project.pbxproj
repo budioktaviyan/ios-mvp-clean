@@ -46,6 +46,7 @@
 		1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517321A68C9A00DDA683 /* AppAssembly.swift */; };
 		1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517521A698DB00DDA683 /* DefaultObserver.swift */; };
 		1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517721A69C0D00DDA683 /* Usecase.swift */; };
+		1FAF34A922B4EB0F00BB5D78 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34A822B4EB0F00BB5D78 /* CardView.swift */; };
 		1FD6C21521FBD29E009F4699 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6C21421FBD29E009F4699 /* Network.swift */; };
 		1FEA1E6622B407AC00A15364 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA1E6522B407AC00A15364 /* AppModule.swift */; };
 		1FEA1E6822B4094D00A15364 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA1E6722B4094D00A15364 /* HomeModule.swift */; };
@@ -104,6 +105,7 @@
 		1F87517721A69C0D00DDA683 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxTest.framework; path = Carthage/Build/iOS/RxNimbleRxTest.framework; sourceTree = "<group>"; };
 		1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxBlocking.framework; path = Carthage/Build/iOS/RxNimbleRxBlocking.framework; sourceTree = "<group>"; };
+		1FAF34A822B4EB0F00BB5D78 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1FD6C21421FBD29E009F4699 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1FEA1E6522B407AC00A15364 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		1FEA1E6722B4094D00A15364 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 		1FF0D87722B0D7A4005DBA17 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1FAF34A822B4EB0F00BB5D78 /* CardView.swift */,
 				1FF0D87822B0D7C0005DBA17 /* Datasource.swift */,
 				1FF0D87A22B0D7DB005DBA17 /* DatasourceCell.swift */,
 				1FF0D87C22B0D811005DBA17 /* DatasourceController.swift */,
@@ -533,6 +536,7 @@
 				1FF0D88122B0D871005DBA17 /* LoadingErrorView.swift in Sources */,
 				1F80C67D220028DD00C88019 /* HomeUsecase.swift in Sources */,
 				1FF0D87B22B0D7DB005DBA17 /* DatasourceCell.swift in Sources */,
+				1FAF34A922B4EB0F00BB5D78 /* CardView.swift in Sources */,
 				1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */,
 				1F80C68122004C4500C88019 /* HomeController.swift in Sources */,
 				1FF0D87F22B0D82A005DBA17 /* DefaultCell.swift in Sources */,

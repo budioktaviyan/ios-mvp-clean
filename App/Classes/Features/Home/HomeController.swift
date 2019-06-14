@@ -4,7 +4,7 @@ class HomeController: DatasourceController {
 
     var presenter: HomePresenter!
 
-    private lazy var params: HomeParam = HomeParam(apiKey: CoreConfig.API_KEY)
+    private lazy var params: HomeParam = HomeParam()
     private lazy var datasources: HomeViewDatasource = HomeViewDatasource()
     private lazy var loadingView: LoadingView = LoadingView()
     private lazy var errorView: LoadingErrorView = {
@@ -35,7 +35,7 @@ class HomeController: DatasourceController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
+        return CGSize(width: view.frame.width / 2, height: 256)
     }
 
     override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
@@ -63,7 +63,10 @@ class HomeController: DatasourceController {
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentOffsetY = scrollView.contentOffset.y
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
-        if (currentOffsetY == maximumOffset) && currentPage + 1 <= totalPage && !isLoading { presenter.discoverMoreMovie() }
+        if (currentOffsetY == maximumOffset) && currentPage + 1 <= totalPage && !isLoading {
+            params.page = currentPage + 1
+            presenter.discoverMovies(params: params)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -93,9 +96,7 @@ extension HomeController: LoadingErrorDelegate, LoadingMoreErrorDelegate {
     }
 
     func onRetryMoreClicked() {
-        datasources.isLoadMoreError = false
-        reloadData()
-        presenter.discoverMoreMovie()
+        presenter.discoverMovies(params: params)
     }
 
     private func initLoadView() {
@@ -143,15 +144,34 @@ extension HomeController: HomeView {
         loadingView.hideAnimation()
     }
 
+    func onLoadMore() {
+        isLoading = true
+        datasources.isLoadMoreError = false
+        reloadData()
+    }
+
     func onShowDiscoverMovie(entity: HomeEntity) {
         datasources.objects = entity.movies
-        totalPage = entity.page
+        totalPage = entity.totalPages
         currentPage = 1
+    }
+
+    func onShowDiscoverMovies(entity: HomeEntity) {
+        let total = entity.movies.count
+        if total > 0 { let _ = entity.movies.compactMap { element in datasources.objects?.append(element) } }
+
+        isLoading = false
+        currentPage += 1
     }
 
     func onShowErrorMessage(message: String) {
         initLoadErrorView()
         errorView.isHidden = false
+        print(message)
+    }
+
+    func onShowErrorMessages(message: String) {
+        datasources.isLoadMoreError = true
         print(message)
     }
 
