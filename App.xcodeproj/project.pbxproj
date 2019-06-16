@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0460F022B7605700AAD9FB /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE721A27C97001B0013 /* RxBlocking.framework */; };
 		1F0BDC6F22B546D7008BBDE7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */; };
 		1F0BDC7122B546FD008BBDE7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */; };
 		1F0BDC7322B547AD008BBDE7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7222B547AD008BBDE7 /* DetailView.swift */; };
@@ -172,6 +173,7 @@
 				1F44E26A21D503B4003A0542 /* Quick.framework in Frameworks */,
 				1F44E26B21D503B4003A0542 /* RxNimbleRxBlocking.framework in Frameworks */,
 				1F44E26C21D503B4003A0542 /* RxNimbleRxTest.framework in Frameworks */,
+				1F0460F022B7605700AAD9FB /* RxBlocking.framework in Frameworks */,
 				1F44E26D21D503B4003A0542 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +432,7 @@
 				1F6B8385219ED8CD00146FD1 /* Sources */,
 				1F6B8386219ED8CD00146FD1 /* Frameworks */,
 				1F6B8387219ED8CD00146FD1 /* Resources */,
+				1F0460ED22B69BE200AAD9FB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -502,6 +505,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F0460ED22B69BE200AAD9FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxNimbleRxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxNimbleRxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxNimbleRxBlocking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxNimbleRxTest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 		1FECECF821A27CC7001B0013 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
