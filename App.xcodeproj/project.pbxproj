@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0BDC6F22B546D7008BBDE7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */; };
+		1F0BDC7122B546FD008BBDE7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */; };
+		1F0BDC7322B547AD008BBDE7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7222B547AD008BBDE7 /* DetailView.swift */; };
+		1F0BDC7522B54C9F008BBDE7 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7422B54C9F008BBDE7 /* DetailModule.swift */; };
 		1F44E26121D50398003A0542 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECEA21A27C97001B0013 /* Alamofire.framework */; };
 		1F44E26221D50398003A0542 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE421A27C97001B0013 /* Kingfisher.framework */; };
 		1F44E26321D50398003A0542 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE821A27C97001B0013 /* RxAlamofire.framework */; };
@@ -47,6 +51,10 @@
 		1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517521A698DB00DDA683 /* DefaultObserver.swift */; };
 		1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87517721A69C0D00DDA683 /* Usecase.swift */; };
 		1FAF34A922B4EB0F00BB5D78 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34A822B4EB0F00BB5D78 /* CardView.swift */; };
+		1FAF34AC22B4F61C00BB5D78 /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34AB22B4F61C00BB5D78 /* DetailEntity.swift */; };
+		1FAF34AE22B4F66F00BB5D78 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34AD22B4F66F00BB5D78 /* DetailViewCell.swift */; };
+		1FAF34B022B4FB3700BB5D78 /* DetailViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34AF22B4FB3700BB5D78 /* DetailViewDatasource.swift */; };
+		1FAF34B222B4FC1300BB5D78 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF34B122B4FC1300BB5D78 /* DetailController.swift */; };
 		1FD6C21521FBD29E009F4699 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6C21421FBD29E009F4699 /* Network.swift */; };
 		1FEA1E6622B407AC00A15364 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA1E6522B407AC00A15364 /* AppModule.swift */; };
 		1FEA1E6822B4094D00A15364 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA1E6722B4094D00A15364 /* HomeModule.swift */; };
@@ -73,6 +81,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		1F0BDC7222B547AD008BBDE7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1F0BDC7422B54C9F008BBDE7 /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
 		1F44E26F21D50615003A0542 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1F55855621D4FD9D0073E05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F6B8375219ED8CC00146FD1 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +118,10 @@
 		1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxTest.framework; path = Carthage/Build/iOS/RxNimbleRxTest.framework; sourceTree = "<group>"; };
 		1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxBlocking.framework; path = Carthage/Build/iOS/RxNimbleRxBlocking.framework; sourceTree = "<group>"; };
 		1FAF34A822B4EB0F00BB5D78 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1FAF34AB22B4F61C00BB5D78 /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
+		1FAF34AD22B4F66F00BB5D78 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		1FAF34AF22B4FB3700BB5D78 /* DetailViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDatasource.swift; sourceTree = "<group>"; };
+		1FAF34B122B4FC1300BB5D78 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1FD6C21421FBD29E009F4699 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1FEA1E6522B407AC00A15364 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		1FEA1E6722B4094D00A15364 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
@@ -224,6 +240,7 @@
 		1F80C66721FEF82D00C88019 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1FAF34AA22B4F5FE00BB5D78 /* Detail */,
 				1F80C66921FEF8FB00C88019 /* Home */,
 			);
 			path = Features;
@@ -316,6 +333,21 @@
 				1F87517321A68C9A00DDA683 /* AppAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1FAF34AA22B4F5FE00BB5D78 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */,
+				1FAF34B122B4FC1300BB5D78 /* DetailController.swift */,
+				1FAF34AB22B4F61C00BB5D78 /* DetailEntity.swift */,
+				1F0BDC7422B54C9F008BBDE7 /* DetailModule.swift */,
+				1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */,
+				1F0BDC7222B547AD008BBDE7 /* DetailView.swift */,
+				1FAF34AD22B4F66F00BB5D78 /* DetailViewCell.swift */,
+				1FAF34AF22B4FB3700BB5D78 /* DetailViewDatasource.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		1FECECDF21A27C0F001B0013 /* Frameworks */ = {
@@ -516,8 +548,10 @@
 				1F80C67B2200232900C88019 /* HomeRepository.swift in Sources */,
 				1F80C6792200211400C88019 /* HomeFactory.swift in Sources */,
 				1F80C67321FF19CD00C88019 /* HomeEntity.swift in Sources */,
+				1F0BDC7522B54C9F008BBDE7 /* DetailModule.swift in Sources */,
 				1FF0D87D22B0D811005DBA17 /* DatasourceController.swift in Sources */,
 				1FF0D88922B1EEAB005DBA17 /* HomeViewCell.swift in Sources */,
+				1FAF34B222B4FC1300BB5D78 /* DetailController.swift in Sources */,
 				1F80C66F21FF127C00C88019 /* HomeDatasource.swift in Sources */,
 				1FD6C21521FBD29E009F4699 /* Network.swift in Sources */,
 				1F87516F21A628FD00DDA683 /* RxThread.swift in Sources */,
@@ -527,11 +561,14 @@
 				1F80C66421FD312200C88019 /* PrimitiveSequenceExt.swift in Sources */,
 				1F80C66D21FF088A00C88019 /* HomeResponse.swift in Sources */,
 				1F87517821A69C0D00DDA683 /* Usecase.swift in Sources */,
+				1FAF34AE22B4F66F00BB5D78 /* DetailViewCell.swift in Sources */,
 				1FF0D88722B0D8FA005DBA17 /* LoadingView.swift in Sources */,
 				1FF0D88322B0D8D0005DBA17 /* LoadingMoreErrorView.swift in Sources */,
+				1F0BDC6F22B546D7008BBDE7 /* DetailPresenter.swift in Sources */,
 				1F6B8379219ED8CC00146FD1 /* AppDelegate.swift in Sources */,
 				1F87516D21A625D400DDA683 /* JobExecutor.swift in Sources */,
 				1F87517621A698DB00DDA683 /* DefaultObserver.swift in Sources */,
+				1F0BDC7322B547AD008BBDE7 /* DetailView.swift in Sources */,
 				1F80C66B21FEF91300C88019 /* HomePresenter.swift in Sources */,
 				1FF0D88122B0D871005DBA17 /* LoadingErrorView.swift in Sources */,
 				1F80C67D220028DD00C88019 /* HomeUsecase.swift in Sources */,
@@ -540,11 +577,14 @@
 				1F87517421A68C9A00DDA683 /* AppAssembly.swift in Sources */,
 				1F80C68122004C4500C88019 /* HomeController.swift in Sources */,
 				1FF0D87F22B0D82A005DBA17 /* DefaultCell.swift in Sources */,
+				1FAF34B022B4FB3700BB5D78 /* DetailViewDatasource.swift in Sources */,
 				1FF0D87922B0D7C0005DBA17 /* Datasource.swift in Sources */,
 				1FEA1E6622B407AC00A15364 /* AppModule.swift in Sources */,
 				1FF0D88522B0D8E7005DBA17 /* LoadingMoreView.swift in Sources */,
 				1F44E27021D50615003A0542 /* AppRouter.swift in Sources */,
+				1FAF34AC22B4F61C00BB5D78 /* DetailEntity.swift in Sources */,
 				1F80C67F22002DEE00C88019 /* HomeView.swift in Sources */,
+				1F0BDC7122B546FD008BBDE7 /* DetailAssembly.swift in Sources */,
 				1F87516B21A578CC00DDA683 /* CoreExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

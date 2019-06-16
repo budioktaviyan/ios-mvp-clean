@@ -56,8 +56,19 @@ class HomeController: DatasourceController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let objects = datasources.objects else { return }
-        guard let _ = objects[indexPath.row] as? Movie else { return }
-        // TODO: Construct movie data to the next detail movie screen
+        guard let data = objects[indexPath.row] as? Movie else { return }
+
+        let entity: DetailEntity = DetailEntity(
+            title: data.title,
+            overview: data.overview,
+            backdropPath: data.backdropPath
+        )
+
+        let router: AppRouter = AppRouter.instance
+        router.presentModule(module: DetailModule(
+            router: router,
+            entity: entity)
+        )
     }
 
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {

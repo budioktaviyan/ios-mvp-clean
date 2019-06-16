@@ -38,7 +38,8 @@ class AppRouter: AppRouterDelegate {
         assembler.apply(
             assemblies: [
                 AppAssembly(),
-                HomeAssembly()
+                HomeAssembly(),
+                DetailAssembly()
             ]
         )
 
