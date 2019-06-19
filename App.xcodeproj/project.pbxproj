@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F0460F022B7605700AAD9FB /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE721A27C97001B0013 /* RxBlocking.framework */; };
+		1F0460F622BABC4C00AAD9FB /* DetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0460F522BABC4C00AAD9FB /* DetailPresenterTest.swift */; };
 		1F0BDC6F22B546D7008BBDE7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */; };
 		1F0BDC7122B546FD008BBDE7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */; };
 		1F0BDC7322B547AD008BBDE7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDC7222B547AD008BBDE7 /* DetailView.swift */; };
@@ -15,14 +15,11 @@
 		1F44E26121D50398003A0542 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECEA21A27C97001B0013 /* Alamofire.framework */; };
 		1F44E26221D50398003A0542 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE421A27C97001B0013 /* Kingfisher.framework */; };
 		1F44E26321D50398003A0542 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE821A27C97001B0013 /* RxAlamofire.framework */; };
-		1F44E26421D50398003A0542 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECEC21A27C97001B0013 /* RxAtomic.framework */; };
-		1F44E26521D50398003A0542 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE721A27C97001B0013 /* RxBlocking.framework */; };
 		1F44E26621D50398003A0542 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE321A27C97001B0013 /* RxCocoa.framework */; };
 		1F44E26721D50398003A0542 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE521A27C97001B0013 /* RxSwift.framework */; };
 		1F44E26821D50398003A0542 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE621A27C97001B0013 /* Swinject.framework */; };
 		1F44E26921D503B4003A0542 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECEB21A27C97001B0013 /* Nimble.framework */; };
 		1F44E26A21D503B4003A0542 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE221A27C97001B0013 /* Quick.framework */; };
-		1F44E26B21D503B4003A0542 /* RxNimbleRxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */; };
 		1F44E26C21D503B4003A0542 /* RxNimbleRxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */; };
 		1F44E26D21D503B4003A0542 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECECE921A27C97001B0013 /* RxTest.framework */; };
 		1F44E27021D50615003A0542 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F44E26F21D50615003A0542 /* AppRouter.swift */; };
@@ -82,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0460F522BABC4C00AAD9FB /* DetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTest.swift; sourceTree = "<group>"; };
 		1F0BDC6E22B546D7008BBDE7 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		1F0BDC7022B546FD008BBDE7 /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		1F0BDC7222B547AD008BBDE7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 		1F87517521A698DB00DDA683 /* DefaultObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultObserver.swift; sourceTree = "<group>"; };
 		1F87517721A69C0D00DDA683 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxTest.framework; path = Carthage/Build/iOS/RxNimbleRxTest.framework; sourceTree = "<group>"; };
-		1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNimbleRxBlocking.framework; path = Carthage/Build/iOS/RxNimbleRxBlocking.framework; sourceTree = "<group>"; };
 		1FAF34A822B4EB0F00BB5D78 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1FAF34AB22B4F61C00BB5D78 /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
 		1FAF34AD22B4F66F00BB5D78 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
@@ -131,12 +128,10 @@
 		1FECECE421A27C97001B0013 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		1FECECE521A27C97001B0013 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		1FECECE621A27C97001B0013 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		1FECECE721A27C97001B0013 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		1FECECE821A27C97001B0013 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		1FECECE921A27C97001B0013 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		1FECECEA21A27C97001B0013 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1FECECEB21A27C97001B0013 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		1FECECEC21A27C97001B0013 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		1FF0D87822B0D7C0005DBA17 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		1FF0D87A22B0D7DB005DBA17 /* DatasourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceCell.swift; sourceTree = "<group>"; };
 		1FF0D87C22B0D811005DBA17 /* DatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceController.swift; sourceTree = "<group>"; };
@@ -157,8 +152,6 @@
 				1F44E26121D50398003A0542 /* Alamofire.framework in Frameworks */,
 				1F44E26221D50398003A0542 /* Kingfisher.framework in Frameworks */,
 				1F44E26321D50398003A0542 /* RxAlamofire.framework in Frameworks */,
-				1F44E26421D50398003A0542 /* RxAtomic.framework in Frameworks */,
-				1F44E26521D50398003A0542 /* RxBlocking.framework in Frameworks */,
 				1F44E26621D50398003A0542 /* RxCocoa.framework in Frameworks */,
 				1F44E26721D50398003A0542 /* RxSwift.framework in Frameworks */,
 				1F44E26821D50398003A0542 /* Swinject.framework in Frameworks */,
@@ -171,9 +164,7 @@
 			files = (
 				1F44E26921D503B4003A0542 /* Nimble.framework in Frameworks */,
 				1F44E26A21D503B4003A0542 /* Quick.framework in Frameworks */,
-				1F44E26B21D503B4003A0542 /* RxNimbleRxBlocking.framework in Frameworks */,
 				1F44E26C21D503B4003A0542 /* RxNimbleRxTest.framework in Frameworks */,
-				1F0460F022B7605700AAD9FB /* RxBlocking.framework in Frameworks */,
 				1F44E26D21D503B4003A0542 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +172,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0460F422BABC3500AAD9FB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F0460F522BABC4C00AAD9FB /* DetailPresenterTest.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		1F6229042202772E001C5AFC /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,19 +354,16 @@
 		1FECECDF21A27C0F001B0013 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F9E069521A8BC17009E28BA /* RxNimbleRxBlocking.framework */,
-				1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */,
 				1FECECEA21A27C97001B0013 /* Alamofire.framework */,
 				1FECECE421A27C97001B0013 /* Kingfisher.framework */,
-				1FECECEB21A27C97001B0013 /* Nimble.framework */,
-				1FECECE221A27C97001B0013 /* Quick.framework */,
 				1FECECE821A27C97001B0013 /* RxAlamofire.framework */,
-				1FECECEC21A27C97001B0013 /* RxAtomic.framework */,
-				1FECECE721A27C97001B0013 /* RxBlocking.framework */,
 				1FECECE321A27C97001B0013 /* RxCocoa.framework */,
 				1FECECE521A27C97001B0013 /* RxSwift.framework */,
-				1FECECE921A27C97001B0013 /* RxTest.framework */,
 				1FECECE621A27C97001B0013 /* Swinject.framework */,
+				1FECECE221A27C97001B0013 /* Quick.framework */,
+				1FECECEB21A27C97001B0013 /* Nimble.framework */,
+				1F9E069321A8BBC5009E28BA /* RxNimbleRxTest.framework */,
+				1FECECE921A27C97001B0013 /* RxTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -383,6 +379,7 @@
 		1FECECFD21A2839B001B0013 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1F0460F422BABC3500AAD9FB /* Detail */,
 				1F80C66821FEF8B800C88019 /* Home */,
 			);
 			path = Features;
@@ -515,9 +512,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxNimbleRxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxNimbleRxTest.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 			);
 			outputFileListPaths = (
@@ -525,9 +520,7 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxNimbleRxBlocking.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxNimbleRxTest.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,8 +538,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
@@ -557,8 +548,6 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAlamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAtomic.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
@@ -626,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6B838E219ED8CD00146FD1 /* HomePresenterTest.swift in Sources */,
+				1F0460F622BABC4C00AAD9FB /* DetailPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -765,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -789,6 +779,7 @@
 				);
 				IMAGE_URL = "https://image.tmdb.org";
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -815,6 +806,7 @@
 				);
 				IMAGE_URL = "https://image.tmdb.org";
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
